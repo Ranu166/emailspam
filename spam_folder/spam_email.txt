@@ -1,0 +1,16 @@
+Congratulations! You won a free prize. Click here to claim your money.
+--------------------------------------------------
+Congratulations! You won a free prize. Click here to claim your money.
+--------------------------------------------------
+From: test@gmail.com
+Subject: Congratulations! You won a prize
+Message: Click here to claim your free money.
+--------------------------------------------------
+From: test@gmail.com
+Subject: Congratulations! You won a prize
+Message: Click here to claim your free money.
+--------------------------------------------------
+From: test@gmail.com
+Subject: Congratulations! You won a prize
+Message: Congratulations! You won a free prize. Click here to claim your money.
+--------------------------------------------------

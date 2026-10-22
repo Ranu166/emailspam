@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Spam Detection</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📧 Email Spam Detection</h1>
+
+    <p>Check whether an email is Spam or Normal</p>
+
+    <form method="POST">
+
+        <label>From:</label>
+
+        <input type="email"
+               name="sender"
+               placeholder="example@gmail.com"
+               required>
+
+        <br><br>
+
+        <label>Subject:</label>
+
+        <input type="text"
+               name="subject"
+               placeholder="Enter email subject"
+               required>
+
+        <br><br>
+
+        <label>Email Message:</label>
+
+        <textarea
+            name="email"
+            rows="8"
+            placeholder="Write or paste your email here..."
+            required></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            🔍 Check Email
+        </button>
+
+    </form>
+
+
+    {% if result %}
+
+        <div class="result">
+            {{ result }}
+        </div>
+
+    {% endif %}
+
+
+    <hr>
+
+
+    <!-- Email Counts -->
+
+    <div class="counts">
+
+        <div>
+            📥 Inbox
+            <strong>{{ inbox_count }}</strong>
+        </div>
+
+        <div>
+            🚨 Spam
+            <strong>{{ spam_count }}</strong>
+        </div>
+
+    </div>
+
+
+    <h3>📂 Email Folders</h3>
+
+
+    <!-- Inbox Button -->
+
+    <a href="/inbox">
+
+        <button type="button">
+            📥 Inbox
+        </button>
+
+    </a>
+
+
+    <!-- Spam Button -->
+
+    <a href="/spam">
+
+        <button type="button">
+            🚨 Spam Folder
+        </button>
+
+    </a>
+
+
+    <br><br>
+
+
+
+
+    </a>
+
+</div>
+
+</body>
+</html>
